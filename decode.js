@@ -5,10 +5,10 @@
 
 const uri = 'https://mozilla.org/?x=шеллы'
 const encode = encodeURI(uri)
-console.log('ini Encode '+encode)
+console.log('this is >> Encode '+encode)
 
 try{
-  console.log('ini decode '+decodeURI(encode))
+  console.log('this is >> decode '+decodeURI(encode))
 }catch (e){
   console.Error(e)
 }
