@@ -1,7 +1,7 @@
 function added(){
-  let result=0;
+  let result=1;
   for(i=0;i<arguments.length;i++){
-    result-=arguments[i];
+    result*=arguments[i];
   }
   return result;
 }
