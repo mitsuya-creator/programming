@@ -27,14 +27,22 @@ function Mahasiswa(nama,energi,passion){
   this.nama=nama;
   this.energi=energi;
   this.passion=passion;
+  this.ate = function (porsi){ //Method is property/key contained function
+    this.energi+=porsi;
+  }
+  this.played = function (hour){ //Method is property/key contained function
+    this.energi-=hour;
+  }
 }
 
 let mhs4=new Mahasiswa('kisaki',70,'fighter')
+let mhs5=new Mahasiswa('rahayu',50,'mage')
 
-
+/*
 for(let key in mhs4){
   console.log(`${key}: ${mhs4[key]}`)
 }
+*/
 
 
 
