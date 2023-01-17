@@ -33,9 +33,6 @@ function Angkot(driver,trayek, passenger,kas){
         passenger[i] = undefined;
         this.kas += bill;
       }
-      else{
-        
-      }
     }
     }
   }
@@ -43,3 +40,7 @@ function Angkot(driver,trayek, passenger,kas){
 }
 let Angkot1 = new Angkot('mitsuya',['cimahi','cibiru'],[],0)
 let Angkot2 = new Angkot('mickey',['ciroyom','antapani'],[],0)
+
+//PR
+// console log when passenger is not in ANGKOT
+// push new passenger to fill undefined 
