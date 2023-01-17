@@ -16,18 +16,27 @@ function Angkot(driver,trayek, passenger,kas){
   
   //method passenger IN
   this.passengerIN = function(namePassenger){
-    this.passenger.push(namePassenger);
-    
-    return this.passenger;
+    this.passenger.push(namePassenger.toLowerCase());
   }
   //method passenger OUT
   this.passengerOUT = function(namePassenger,bill){
-    for(i = 0; i < passenger.length ; i++){
-      if(passenger[i]===namePassenger){
+    //if bill not filled / BLANK
+    if( bill == undefined ){
+      console.log('Bill INCORRECT! (passenger,bill)!');
+      
+    }
+    else{
+      namePassenger = namePassenger.toLowerCase();
+      for(i = 0; i < passenger.length ; i++){
+        //check or find passenger in Angkot
+      if(passenger[i]==namePassenger){
         passenger[i] = undefined;
         this.kas += bill;
-        return false;
       }
+      else{
+        
+      }
+    }
     }
   }
   
