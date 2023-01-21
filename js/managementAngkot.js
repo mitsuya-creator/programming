@@ -31,6 +31,11 @@ function Angkot(driver,trayek, passenger,kas){
     }
   }
   
+  //method passenger OUT
+  this.passengerOUT = function(namePassenger){
+    
+  }
+  
 }
 let Angkot1 = new Angkot('mitsuya',['cimahi','cibiru'],[],0)
 let Angkot2 = new Angkot('mickey',['ciroyom','antapani'],[],0)
