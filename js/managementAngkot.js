@@ -16,29 +16,23 @@ function Angkot(driver,trayek, passenger,kas){
   
   //method passenger IN
   this.passengerIN = function(namePassenger){
-    this.passenger.push(namePassenger.toLowerCase());
-  }
-  //method passenger OUT
-  this.passengerOUT = function(namePassenger,bill){
-    //if bill not filled / BLANK
-    if( bill == undefined ){
-      console.log('Bill INCORRECT! (passenger,bill)!');
-      
-    }
-    else{
-      namePassenger = namePassenger.toLowerCase();
-      for(i = 0; i < passenger.length ; i++){
-        //check or find passenger in Angkot
-      if(passenger[i]==namePassenger){
-        passenger[i] = undefined;
-        this.kas += bill;
+    //Looping to check Angkot
+    for( i = 0; i <= passenger.length; i++){
+      //if Angkot still Empty
+      if(passenger.length == 0 || passenger[0] == [] ){
+        this.passenger.push(namePassenger);
+        return passenger;
       }
-    }
+      //if IN Angkot there's undefined 
+      if(passenger[i] == undefined){
+        this.passenger[i] = namePassenger;
+        return passenger;
+      }
     }
   }
   
 }
-let Angkot1 = new Angkot('mitsuya',['cimahi','cibiru'],[],0)
+let Angkot1 = new Angkot('mitsuya',['cimahi','cibiru'],['hina',undefined,'takeo'],0)
 let Angkot2 = new Angkot('mickey',['ciroyom','antapani'],[],0)
 
 //PR
