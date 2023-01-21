@@ -32,7 +32,7 @@ function Angkot(driver,trayek, passenger,kas){
   }
   
 }
-let Angkot1 = new Angkot('mitsuya',['cimahi','cibiru'],['hina',undefined,'takeo'],0)
+let Angkot1 = new Angkot('mitsuya',['cimahi','cibiru'],[],0)
 let Angkot2 = new Angkot('mickey',['ciroyom','antapani'],[],0)
 
 //PR
