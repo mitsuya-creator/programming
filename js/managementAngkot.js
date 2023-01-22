@@ -53,8 +53,9 @@ function Angkot(driver,trayek, passenger,kas){
   }
   
 }
-let Angkot1 = new Angkot('mitsuya',['cimahi','cibiru'],[],0)
-let Angkot2 = new Angkot('mickey',['ciroyom','antapani'],[],0)
+//list Angkots
+Angkot1 = new Angkot('mitsuya',['cimahi','cibiru'],[],0)
+Angkot2 = new Angkot('mickey',['ciroyom','antapani'],[],0)
 
 //PR
 // console log when passenger is not in ANGKOT
@@ -62,4 +63,6 @@ let Angkot2 = new Angkot('mickey',['ciroyom','antapani'],[],0)
 
 /* PROGRAM ANGKOT DONE 23 JANUARY 23 ✅✅*/
 
-//NEW PR HOW TO CREATE AND REMOVE ANGKOT (ANGKOT V2)❌
+//NEW PR HOW TO CREATE AND REMOVE ANGKOT (ANGKOT V2) DONE 23 JANUARY Z23 ✅✅
+// for create ex Angkot = new Angkot()
+// for remove using keyword delete <<name Object>> ex delete Angkot1. *NOTED MAKE SURE OBJ(Angkot1) is obj GLOBAL! not var OR let keyword !
