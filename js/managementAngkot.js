@@ -32,8 +32,24 @@ function Angkot(driver,trayek, passenger,kas){
   }
   
   //method passenger OUT
-  this.passengerOUT = function(namePassenger){
-    
+  this.passengerOUT = function(namePassenger,bill){
+    //IF Bill not filled
+    if(bill == undefined){
+      console.log('Bill Incorrect!');
+      return this.kas;
+    }
+    else{
+    //Looping to check there's name Of Passenger in Angkot
+    for( i = 0; i < passenger.length; i++){
+      if(passenger[i] == namePassenger){
+        this.passenger[i] = undefined;
+        this.kas += bill;
+        return console.log(this.kas,this.passenger);
+      }
+    }
+    //Console.log if there's not name of passenger IN Angkot!
+    console.log(`${namePassenger} is not IN Angkot!`);
+    }
   }
   
 }
@@ -43,3 +59,7 @@ let Angkot2 = new Angkot('mickey',['ciroyom','antapani'],[],0)
 //PR
 // console log when passenger is not in ANGKOT
 // push new passenger to fill undefined 
+
+/* PROGRAM ANGKOT DONE 23 JANUARY 23 ✅✅*/
+
+//NEW PR HOW TO CREATE AND REMOVE ANGKOT (ANGKOT V2)❌
