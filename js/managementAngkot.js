@@ -49,6 +49,7 @@ function Angkot(driver,trayek, passenger,kas){
     }
     //Console.log if there's not name of passenger IN Angkot!
     console.log(`${namePassenger} is not IN Angkot!`);
+    return passenger;
     }
   }
   
@@ -66,3 +67,5 @@ Angkot2 = new Angkot('mickey',['ciroyom','antapani'],[],0)
 //NEW PR HOW TO CREATE AND REMOVE ANGKOT (ANGKOT V2) DONE 23 JANUARY Z23 ✅✅
 // for create ex Angkot = new Angkot()
 // for remove using keyword delete <<name Object>> ex delete Angkot1. *NOTED MAKE SURE OBJ(Angkot1) is obj GLOBAL! not var OR let keyword !
+
+// NEW PR IMPLEMENTASI IN WEB PAGE BROWSER ❌❌❌
