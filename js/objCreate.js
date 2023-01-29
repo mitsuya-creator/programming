@@ -4,18 +4,19 @@
 SELL = HARGA JUAL KE KONSUMEN
 BUY = HARGA BELI DARI TOKO/SALES
 */
-function NameCigarettes(merk,kind,kas){
+function MyStore(category,merk,kind,kas){
+    this.category = category;
     this.merk = merk;
     this.kind = kind;
     this.kas = kas;
-    this.buy = function(kindOfCigarettes,amount) {
+    this.buy = function(kindOfItems,amount) {
       for( i = 0; i <= this.kind.length; i++){
-        if(this.kind.length == 0 || (this.kind.includes(kindOfCigarettes) == false)){
-          this.kind.push(kindOfCigarettes);
+        if(this.kind.length == 0 || (this.kind.includes(kindOfItems) == false)){
+          this.kind.push(kindOfItems);
           this.kind.push(amount);
           return kind;
         }
-        else if(this.kind[i] == kindOfCigarettes){
+        else if(this.kind[i] == kindOfItems){
           if(kind[i+1] == undefined){
             kind[i+1] = 0;
             this.kind.splice(i+1,1,kind[i+1]+amount);
@@ -29,13 +30,13 @@ function NameCigarettes(merk,kind,kas){
     }
   }
   
-  this.sell = function (kindOfCigarettes,amount,price){
+  this.sell = function (kindOfItems,amount,price){
     for(i = 0; i <= this.kind.length;i++){
-      if(this.kind.length == 0 || (this.kind.includes(kindOfCigarettes) == false) ){
+      if(this.kind.length == 0 || (this.kind.includes(kindOfItems) == false) ){
         console.log("Out Of STOCK!");
         return this.kind;
       }
-      else if(this.kind[i] == kindOfCigarettes){
+      else if(this.kind[i] == kindOfItems){
         if(amount == undefined || this.kind[i+1] < amount){
           console.log("input Is INCORRECT!")
           return this.kind;
@@ -49,8 +50,20 @@ function NameCigarettes(merk,kind,kas){
     }
   }
 }
-let SM = new NameCigarettes("Sampoerna",[],0)
+let SM = new MyStore("Cigarettes","Sampoerna",[],0)
 
 
-
-
+//  MAKE OBJECT AUTOMATIC
+/*
+function NewObject(){
+  let category,merk,kind;
+  category = prompt("INPUT Category! ex : Snack , Cigaret , Beverage , Drug");
+  merk = prompt("INPUT Merk Of Category! ex : Nabati, Sampoerna, Gudang Garam, Djarum, Etc.");
+  kind = prompt("INPUT Kind Of Category! ex : kind of Snack is Taro, Malkist Crackers, Malkist Abon, Chitato, Etc.");
+  
+  // Execute New Object
+  let result = "let "+merk+" = new MyStore(category,merk,[kind],0);";
+  let create = new function(result)
+  create()
+}
+*/
