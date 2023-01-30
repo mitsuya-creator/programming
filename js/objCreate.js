@@ -3,6 +3,7 @@
 /*  JENIS ROKOK ["SM","DJ","GG"]
 SELL = HARGA JUAL KE KONSUMEN
 BUY = HARGA BELI DARI TOKO/SALES
+KAS = KAS LABA DARI PENJUALAN
 */
 function MyStore(category,merk,kind,kas){
     this.category = category;
@@ -50,20 +51,15 @@ function MyStore(category,merk,kind,kas){
     }
   }
 }
-let SM = new MyStore("Cigarettes","Sampoerna",[],0)
 
 
 //  MAKE OBJECT AUTOMATIC
-/*
 function NewObject(){
   let category,merk,kind;
   category = prompt("INPUT Category! ex : Snack , Cigaret , Beverage , Drug");
   merk = prompt("INPUT Merk Of Category! ex : Nabati, Sampoerna, Gudang Garam, Djarum, Etc.");
   kind = prompt("INPUT Kind Of Category! ex : kind of Snack is Taro, Malkist Crackers, Malkist Abon, Chitato, Etc.");
   
-  // Execute New Object
-  let result = "let "+merk+" = new MyStore(category,merk,[kind],0);";
-  let create = new function(result)
-  create()
+  // // Execute New Object
+  this[merk] = new MyStore(category,merk,[kind,0],0);
 }
-*/
