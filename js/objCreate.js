@@ -10,22 +10,29 @@ function MyStore(category,merk,kind,kas){
     this.merk = merk;
     this.kind = kind;
     this.kas = kas;
-    this.buy = function(kindOfItems,amount) {
+    this.buy = function(kindOfItems,amount,cost) {
       for( i = 0; i <= this.kind.length; i++){
         if(this.kind.length == 0 || (this.kind.includes(kindOfItems) == false)){
           this.kind.push(kindOfItems);
           this.kind.push(amount);
+          this.kind.push(cost*amount);
           return kind;
         }
         else if(this.kind[i] == kindOfItems){
           if(kind[i+1] == undefined){
-            kind[i+1] = 0;
-            this.kind.splice(i+1,1,kind[i+1]+amount);
-            return kind;
+             kind[i+1] = 0;
+             this.kind.splice(i+1,1,kind[i+1]+amount);
+             return kind;
           }
           else{
-          this.kind.splice(i+1,1,kind[i+1]+amount);
-          return kind;
+             this.kind.splice(i+1,1,kind[i+1]+amount);
+             if(kind[i+2] == 0){
+               this.kind.splice(i+2,1,amount*cost);
+             }
+             else{
+             this.kind.splice(i+2,1,kind[i+2]+cost);
+             }
+             return kind;
         }
         }
     }
@@ -44,7 +51,8 @@ function MyStore(category,merk,kind,kas){
         }
         else{
           this.kind.splice(i+1,1,kind[i+1]-amount);
-          this.kas = this.kas + (amount * price);
+          this.kind.splice(i+2,1,kind[i+2]/amount);  //PR ❌
+          this.kas = this.kas + ((amount * price) - (this.kind[i+2]));
           console.log(this.kind, this.kas)
         }
       }
@@ -61,5 +69,6 @@ function NewObject(){
   kind = prompt("INPUT Kind Of Category! ex : kind of Snack is Taro, Malkist Crackers, Malkist Abon, Chitato, Etc.");
   
   // // Execute New Object
-  this[merk] = new MyStore(category,merk,[kind,0],0);
+  this[merk] = new MyStore(category,merk,[kind,0,0],0);
+  return this[merk];
 }
