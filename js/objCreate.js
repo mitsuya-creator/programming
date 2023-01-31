@@ -24,7 +24,7 @@ function MyStore(category,merk,kind,kas){
              this.kind.splice(i+1,1,kind[i+1]+amount);
              return kind;
           }
-          else{
+          else{  // INPUT AMOUNT MORE THAN 1 ❌
              this.kind.splice(i+1,1,kind[i+1]+amount);
              if(kind[i+2] == 0){
                this.kind.splice(i+2,1,amount*cost);
@@ -49,10 +49,18 @@ function MyStore(category,merk,kind,kas){
           console.log("input Is INCORRECT!")
           return this.kind;
         }
-        else{
+        else{ //HOW TO COUNT LABA ❌
+          if((kind[i+1]-amount) != 0){
+          this.kind.splice(i+2,1,kind[i+2]/kind[i+1]);
+          }
           this.kind.splice(i+1,1,kind[i+1]-amount);
-          this.kind.splice(i+2,1,kind[i+2]/amount);  //PR ❌
+          if(this.kind[i+1] != 0){
+            this.kind.splice(i+2,1,kind[i+2]*kind[i+1]);
+          }
           this.kas = this.kas + ((amount * price) - (this.kind[i+2]));
+          if(this.kind[i+1] == 0){
+            this.kind[i+2] = 0;
+          }
           console.log(this.kind, this.kas)
         }
       }
