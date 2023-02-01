@@ -24,13 +24,19 @@ function MyStore(category,merk,kind,kas){
              this.kind.splice(i+1,1,kind[i+1]+amount);
              return kind;
           }
-          else{  // INPUT AMOUNT MORE THAN 1 ❌
+          else{
              this.kind.splice(i+1,1,kind[i+1]+amount);
              if(kind[i+2] == 0){
                this.kind.splice(i+2,1,amount*cost);
              }
              else{
+              if(kind[i+2] == 0){
              this.kind.splice(i+2,1,kind[i+2]+cost);
+              }
+              else{
+                this.kind.splice(i+2,1,kind[i+2]+(amount*cost))
+              }
+              
              }
              return kind;
         }
