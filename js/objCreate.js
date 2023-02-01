@@ -56,15 +56,26 @@ function MyStore(category,merk,kind,kas){
           return this.kind;
         }
         else{ //HOW TO COUNT LABA ❌
-          if((kind[i+1]-amount) != 0){
-          this.kind.splice(i+2,1,kind[i+2]/kind[i+1]);
+          if((this.kind[i+1]-amount) != 0){
+          this.kind[i+2].splice(i+2,1,this.kind[i+2]/this.kind[i+1]);
           }
-          this.kind.splice(i+1,1,kind[i+1]-amount);
-          if(this.kind[i+1] != 0){
-            this.kind.splice(i+2,1,kind[i+2]*kind[i+1]);
+          //this.kind.splice(i+1,1,kind[i+1]-amount);
+          //if(this.kind[i+1] != 0){
+          //  this.kind.splice(i+2,1,kind[i+2]*kind[i+1]);
+          //}
+          if(kind[i+2] != 0){
+            if((kind[i+1]-amount) == 0){
+              this.kas = this.kas + ((amount * price) - this.kind[i+2]);
+            }
+            else{
+              this.kas = this.kas + ((amount * price) - (this.kind[i+2]*amount ));
+            }
+          this.kind[i+1].splice(i+1,1,kind[i+1]-amount);
           }
-          this.kas = this.kas + ((amount * price) - (this.kind[i+2]));
-          if(this.kind[i+1] == 0){
+         // else{
+         //   this.kas = this.kas + ((this.kind[i+2] - (amount * price) ));
+         //}
+          if(this.kind[i+1] == 0){ // code for executed if stock == 0
             this.kind[i+2] = 0;
           }
           console.log(this.kind, this.kas)
