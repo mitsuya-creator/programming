@@ -52,12 +52,12 @@ function MyStore(category,merk,kind,kas){
       }
       else if(this.kind[i] == kindOfItems){
         if(amount == undefined || this.kind[i+1] < amount){
-          console.log("input Is INCORRECT!")
+          console.log("Out of STOCK!")
           return this.kind;
         }
-        else{ //HOW TO COUNT LABA ❌
+        else{
           if((this.kind[i+1]-amount) != 0){
-          this.kind[i+2].splice(i+2,1,this.kind[i+2]/this.kind[i+1]);
+          this.kind.splice(i+2,1,this.kind[i+2]/this.kind[i+1]);
           }
           //this.kind.splice(i+1,1,kind[i+1]-amount);
           //if(this.kind[i+1] != 0){
@@ -70,7 +70,8 @@ function MyStore(category,merk,kind,kas){
             else{
               this.kas = this.kas + ((amount * price) - (this.kind[i+2]*amount ));
             }
-          this.kind[i+1].splice(i+1,1,kind[i+1]-amount);
+          this.kind.splice(i+1,1,kind[i+1]-amount);
+          this.kind.splice(i+2,1,kind[i+2]*kind[i+1]);
           }
          // else{
          //   this.kas = this.kas + ((this.kind[i+2] - (amount * price) ));
