@@ -11,3 +11,6 @@ function history(){
   console.log(app.number[i])
   }
 }
+function clear(){
+  return app.number = [];
+}
