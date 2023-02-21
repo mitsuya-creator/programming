@@ -4,7 +4,7 @@ function List_items(category,name,amount){
   this.name = name;
   this.amount = amount;
   this.adverb = function(){
-    if(amount < 2 && category == "ROKOK"){
+    if(amount < 2 || category == "ROKOK"){
       return "KURANG";
     }
     else{
@@ -57,6 +57,59 @@ let cakra = new List_items("ROKOK","CAKRA-KRETEK",1);
 // List Items ROKOK
 let listRokok = [laBold,mldBlack16,djarcok,super12,super50,signatureBlk,ggMerah,proMerah,proPutih,surya12,surya16,ggFilter12,ggFilter50,samsuKretek,magnumBlk12,samsuPrem,mbFb12,mbFb20,mbKretekBiru,mbIceburst,mbMerah,mbPutih,sm12,sm16,smKrtk,smMenthol16,esBerypop12,esBerypop16,esApplemint,esJuicy,camel,jazyBold,juaraKrtk,mustika,magnumMax,onJasmin,bintangMas,djavaHijau,bhumi,cakra];
 
+// LIST OBJECK OBAT
+let vegeta = new List_items("OBAT","VEGETA",3);
+let konidin = new List_items("OBAT","KONIDIN",3);
+let neozep = new List_items("OBAT","NEOZEP",6);
+let panadoL_ijo = new List_items("OBAT","PANADOL-IJO",1);
+let miranBlack = new List_items("OBAT","MIRANDA-BLACK",1);
+let viks_inhelar = new List_items("OBAT","VIKS44-INHELAR",1);
+let bejo_jahe = new List_items("OBAT","BEJO-JAHE-MERAH",6);
+let antangin = new List_items("OBAT","ANTANGIN",7);
+let waisan = new List_items("OBAT","WAISAN",7);
+let fnl_wash = new List_items("OBAT","FAIR&LOVELY-WASH",1);
+let tAnginDws = new List_items("OBAT","TOLAK-ANGIN-DWS",7);
+let contrexin = new List_items("OBAT","CONTREXIN",7);
+let byeFever = new List_items("OBAT","BYE-BYE-FEVER",7);
+let promag = new List_items("OBAT","PROMAG",7);
+let kayuPutihKcl = new List_items("OBAT","KAYU-PUTIH-KECIL",1);
+let sgrDinginOri = new List_items("OBAT","SEGAR-DINGIN-ORI",7);
+let ceteme = new List_items("OBAT","CETEME",7);
+let tisu2500 = new List_items("OBAT","TISU-2500",7);
+let vitacimin = new List_items("OBAT","VITACIMIN",7);
+let bodrex_FB = new List_items("OBAT","BODREX-FLU-BATUK",7);
+let baygonBkr = new List_items("OBAT","BAYGON-BAKAR",7);
+let koyoCabe = new List_items("OBAT","KOYO-CABE",7);
+let salonpas = new List_items("OBAT","SALONPAS",7);
+let bintang7 = new List_items("OBAT","BINTANG-7",7);
+let entroStopAnak = new List_items("OBAT","ENTROSTOP-ANAK",1);
+let komikObh = new List_items("OBAT","KOMIK-OBH",7);
+let oskadonBiru = new List_items("OBAT","OSKADON-BIRU",7);
+let oskadonSP = new List_items("OBAT","OSKADON-SP",7);
+let mixagripFlu = new List_items("OBAT","MIXAGRIP-FLU",7);
+let mixagripFB = new List_items("OBAT","MIXAGRIP-FLU-BATUK",7);
+let geliga = new List_items("OBAT","BALSEM-GELIGA",7);
+let mirandBlech = new List_items("OBAT","MIRANDA-BLEACHING",1);
+let mirandColor = new List_items("OBAT","MIRANDA-WARNA",1);
+let freshCareMerah = new List_items("OBAT","FRESH-CARE-MERAH",7);
+let hitBakar1000 = new List_items("OBAT","HIT-BAKAR1000",7);
+let betadin = new List_items("OBAT","BETADIN",7);
+let laserin = new List_items("OBAT","LASERIN-BATUK",7);
+let reumacyl = new List_items("OBAT","NEO-REUMACYL",7);
+let paramexKepala = new List_items("OBAT","PARAMEX-KEPALA",7);
+let ademsariSet = new List_items("OBAT","ADEMSARI-SACHET",7);
+let aladina = new List_items("OBAT","ALADINA",7);
+let madurasa = new List_items("OBAT","MADURASA",7);
+let antimo = new List_items("OBAT","ANTIMO-DWS",7);
+let tAnginAnak = new List_items("OBAT","TOLAK-ANGIN-ANAK",1);
+let hansaplas = new List_items("OBAT","HANSAPLAS",1);
+
+// LIST ITEM OBAT
+let listObat = [vegeta,konidin,neozep,panadoL_ijo,miranBlack,viks_inhelar,bejo_jahe,antangin,waisan,fnl_wash,tAnginDws,contrexin,byeFever,promag,kayuPutihKcl,sgrDinginOri,ceteme,tisu2500,vitacimin,bodrex_FB,baygonBkr,koyoCabe,salonpas,bintang7,entroStopAnak,komikObh,oskadonSP,oskadonBiru,mixagripFlu,mixagripFB,geliga,mirandColor,mirandBlech,freshCareMerah,hitBakar1000,betadin,laserin,reumacyl,paramexKepala,ademsariSet,aladina,madurasa,antimo,tAnginAnak,hansaplas];
+
+
+
+
 // CREATE TABEL
 let table = `
 <table class="table">
@@ -83,13 +136,8 @@ document.getElementById("container").appendChild(document.createElement("div")).
 let tbody = document.querySelector("tbody");
 // FOR NUMBER IN TBODY
 let noColumn = 1;
-// TR DNAGER TABLE
-//let trTableDanger = document.createElement("tr");
-//trTableDanger.setAttribute("class","table-danger");
-// TR TABLE NORMAL
-let trTableNormal = document.createElement("tr")
 // LOOPING FOR LIST ITEM
-for(arrContent of listRokok){
+for(arrContent of listObat){
   let trTableContent = `
       <th scope="row">${noColumn++}</th>
       <td>${arrContent.name}</td>
@@ -99,7 +147,6 @@ for(arrContent of listRokok){
     let trTableDanger = tbody.appendChild(document.createElement("tr"));
     trTableDanger.setAttribute("class","table-danger");
     trTableDanger.innerHTML = trTableContent;
-    //tbody.appendChild().innerHTML = trTableContent;
     }
   else{
     tbody.appendChild(document.createElement("tr")).innerHTML=trTableContent;
