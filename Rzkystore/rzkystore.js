@@ -4,11 +4,11 @@ function List_items(category,name,amount){
   this.name = name;
   this.amount = amount;
   this.adverb = function(){
-    if(amount < 3 && category == "ROKOK"){
-      console.log("kurang");
+    if(amount < 2 && category == "ROKOK"){
+      return "KURANG";
     }
     else{
-      console.log("cukup");
+      return "CUKUP";
     }
   }
 }
@@ -50,16 +50,12 @@ let magnumMax = new List_items("ROKOK","MAGNUM-MAX20",6);
 let onJasmin = new List_items("ROKOK","ON-JASMINE",3);
 let bintangMas = new List_items("ROKOK","BINTANG-MAS",6);
 let djavaHijau = new List_items("ROKOK","DJAVA-IJO-KRETEK",7);
-let bhumi = new List_items("ROKOK","BHUMI",6);
-let esBerypop12 = new List_items("ROKOK","ESSE-BERRYPOP-12",6);
-let cakra = new List_items("ROKOK","CAKRA",6);
+let bhumi = new List_items("ROKOK","BHUMI",1);
+let esBerypop12 = new List_items("ROKOK","ESSE-BERRYPOP-12",1);
+let cakra = new List_items("ROKOK","CAKRA",1);
 
 // List Items ROKOK
 let listRokok = [laBold,mldBlack16,djarcok,super12,super50,signatureBlk,ggMerah,proMerah,proPutih,surya12,surya16,ggFilter12,ggFilter50,samsuKretek,magnumBlk12,samsuPrem,mbFb12,mbFb20,mbKretekBiru,mbIceburst,mbMerah,mbPutih,sm12,sm16,smKrtk,smMenthol16,esBerypop12,esBerypop16,esApplemint,esJuicy,camel,jazyBold,juaraKrtk,mustika,magnumMax,onJasmin,bintangMas,djavaHijau,bhumi,cakra];
-// 
-for(arrRokok of listRokok){
-  //console.log(arrRokok.name, arrRokok.amount)
-}
 
 // CREATE TABEL
 let table = `
@@ -81,6 +77,29 @@ let table = `
   </tbody>
 </table>
 `;
+// GET ELEMENT CONTAINER 
 document.getElementById("container").appendChild(document.createElement("div")).innerHTML= table;
+// GET ELEMENT TBODY
 let tbody = document.querySelector("tbody");
-console.log(tbody)
+// FOR NUMBER IN TBODY
+let noColumn = 1;
+// LOOPING FOR LIST ITEM
+for(arrContent of listRokok){
+  let trTable = `
+      <th scope="row">${noColumn++}</th>
+      <td>${arrContent.name}</td>
+      <td class="text-center">${arrContent.amount}</td>
+      <td>${arrContent.adverb()}</td>`;
+    if(arrContent.adverb() == "KURANG"){❌❌
+      let trTable = tbody.appendChild(document.createElement("tr")).setAttribute("class","table-danger");
+      trTable.
+      console.log(trTable);
+      let trDanger = document.getElementsByClassName("table-danger");
+      for(i = 0; i < trDanger.length; i++){
+        trDanger[i].innerHTML = trTable;
+      }
+    }❌❌❌
+    else{
+      tbody.appendChild(document.createElement("tr")).innerHTML=trTable;✅
+    }
+}
