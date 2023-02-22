@@ -38,7 +38,7 @@ let mbPutih = new List_items("ROKOK","MB-PUTIH",4);
 let sm12 = new List_items("ROKOK","SM12",6);
 let sm16 = new List_items("ROKOK","SM16",6);
 let smKrtk = new List_items("ROKOK","SM-KRETEK",6);
-let smMenthol16 = new List_items("ROKOK","SM-MENT-16",6);
+let smMenthol16 = new List_items("ROKOK","SM-MENTHOL-16",6);
 let esBerypop16 = new List_items("ROKOK","ESSE-BERRYPOP-16",6);
 let esApplemint = new List_items("ROKOK","ESSE-APPPLEMINT",6);
 let esJuicy = new List_items("ROKOK","ESSE-JUICY",6);
@@ -104,8 +104,52 @@ let antimo = new List_items("OBAT","ANTIMO-DWS",7);
 let tAnginAnak = new List_items("OBAT","TOLAK-ANGIN-ANAK",1);
 let hansaplas = new List_items("OBAT","HANSAPLAS",1);
 
-// LIST ITEM OBAT
+// LIST ITEMS OBAT
 let listObat = [vegeta,konidin,neozep,panadoL_ijo,miranBlack,viks_inhelar,bejo_jahe,antangin,waisan,fnl_wash,tAnginDws,contrexin,byeFever,promag,kayuPutihKcl,sgrDinginOri,ceteme,tisu2500,vitacimin,bodrex_FB,baygonBkr,koyoCabe,salonpas,bintang7,entroStopAnak,komikObh,oskadonSP,oskadonBiru,mixagripFlu,mixagripFB,geliga,mirandColor,mirandBlech,freshCareMerah,hitBakar1000,betadin,laserin,reumacyl,paramexKepala,ademsariSet,aladina,madurasa,antimo,tAnginAnak,hansaplas];
+
+// LIST OBJECK WRITER TOOLS AND OFFICE
+let lakbanPthkcl = new List_items("ALAT-TULIS-KANTOR","LAKBAN-PUTIH-KECIL",4);
+let lakbanPthbsr = new List_items("ALAT-TULIS-KANTOR","LAKBAN-PUTIH-BESAR",3);
+let etona = new List_items("ALAT-TULIS-KANTOR","ETONA",7);
+let bonRangkap = new List_items("ALAT-TULIS-KANTOR","BON-RANGKAP",7);
+let spidolPermanent = new List_items("ALAT-TULIS-KANTOR","SPIDOL-PERMANENT",7);
+let pulpen = new List_items("ALAT-TULIS-KANTOR","PULPEN",7);
+let buku = new List_items("ALAT-TULIS-KANTOR","BUKU",7);
+
+// LIST ITEMS WRITER TOOLS AND OFFICE
+let listATK = [lakbanPthkcl,lakbanPthbsr,etona,bonRangkap,spidolPermanent,pulpen,buku];
+
+// LIST OBJECK SNACK 
+let twist2000 = new List_items("SNACK","TWIST-2000",7);
+let chitatoLite = new List_items("SNACK","CHITATO-LITE",7);
+let chitatoBbq = new List_items("SNACK","CHITATO-BBQ",7);
+let kuaciRebo = new List_items("SNACK","KUACI-REBO",7);
+let ajisuka = new List_items("SNACK","AJISUKA",7);
+let pangpang = new List_items("SNACK","PANG-PANG",7);
+let astaga = new List_items("SNACK","ASTAGA",7);
+let pilusBbq = new List_items("SNACK","PILUS-BBQ",7);
+let kcgKulit = new List_items("SNACK","KACANG-KULIT",7);
+let rostaIjo = new List_items("SNACK","ROSTA-IJO",7);
+let moringPds = new List_items("SNACK","MORING-PEDAS",7);
+let kerupuk2000 = new List_items("SNACK","KERUPUK-2000",7);
+let kerupukBantet = new List_items("SNACK","KERUPUK-BANTET",7);
+let dadaliCkr = new List_items("SANCK","DADALI-CIKUR",7);
+let basreng1000 = new List_items("SNACK","BASRENG-1000",7);
+let rostaMerah = new List_items("SNACK","ROSTA-MERAH",7);
+let gAtom = new List_items("SNACK","GARUDA-ATOM",7);
+let sosisAyam = new List_items("SNACK","SOSIS-AYAM",7);
+let pilusOri = new List_items("SNACK","PILUS-ORI",7);
+let pilusPds = new List_items("SNACK","PILUS-PEDAS",7);
+let kcgPolong = new List_items("SNACK","KACANG-POLONG",7);
+let dadaliCjr = new List_items("SNACK","DADALI-CIANJUR",7);
+let koroMerah = new List_items("SNACK","KORO-MERAH",7);
+let moringAsin = new List_items("SNACK","MORING-ASIN",7);
+let koroIjo = new List_items("SNACK","KORO-IJO",7);
+let taroBbq = new List_items("SNACK","TARO-BBQ",7);
+let sosisSapi = new List_items("SNACK","SOSIS-SAPI",7);
+
+// LIST ITEMS OF SNACK
+let listSnack = [twist2000,chitatoLite,chitatoBbq,kuaciRebo,ajisuka,pangpang,astaga,pilusBbq,kcgKulit,rostaIjo,moringPds,kerupuk2000,kerupukBantet,dadaliCkr,basreng1000,rostaMerah,gAtom,sosisAyam,pilusOri,pilusPds,kcgPolong,dadaliCjr,koroMerah,moringAsin,koroIjo,taroBbq,sosisSapi];
 
 //FUNCTION FOR CREATE TABLE BODY AND CONTENT
 function createTableContent(itemTocreate){
@@ -150,12 +194,11 @@ let noColumn = 1;
       else{
         tbody.appendChild(document.createElement("tr")).innerHTML=trTableContent;
       }
-    if(noColumn > itemTocreate.length){
-      
-    }
     }
 }
 
 //EXECUTE FUNCTION createTableContent
 createTableContent(listRokok);
 createTableContent(listObat);
+createTableContent(listATK);
+createTableContent(listSnack);
