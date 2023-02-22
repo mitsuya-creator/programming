@@ -4,7 +4,7 @@ function List_items(category,name,amount){
   this.name = name;
   this.amount = amount;
   this.adverb = function(){
-    if(amount < 2 || category == "ROKOK"){
+    if(amount < 2 ){
       return "KURANG";
     }
     else{
@@ -107,15 +107,14 @@ let hansaplas = new List_items("OBAT","HANSAPLAS",1);
 // LIST ITEM OBAT
 let listObat = [vegeta,konidin,neozep,panadoL_ijo,miranBlack,viks_inhelar,bejo_jahe,antangin,waisan,fnl_wash,tAnginDws,contrexin,byeFever,promag,kayuPutihKcl,sgrDinginOri,ceteme,tisu2500,vitacimin,bodrex_FB,baygonBkr,koyoCabe,salonpas,bintang7,entroStopAnak,komikObh,oskadonSP,oskadonBiru,mixagripFlu,mixagripFB,geliga,mirandColor,mirandBlech,freshCareMerah,hitBakar1000,betadin,laserin,reumacyl,paramexKepala,ademsariSet,aladina,madurasa,antimo,tAnginAnak,hansaplas];
 
-
-
-
-// CREATE TABEL
+//FUNCTION FOR CREATE TABLE BODY AND CONTENT
+function createTableContent(itemTocreate){
+  // CREATE TABEL TEMPLATE AND HEADER
 let table = `
-<table class="table">
+<table class="table mb-5">
   <thead class="category table-dark">
     <tr>
-      <td colspan="4" class="text-center fw-bold">ROKOK</td>
+      <td colspan="4" class="text-center fw-bold">${itemTocreate[0].category}</td>
     </tr>
   </thead>
   <thead class="table-secondary">
@@ -126,29 +125,37 @@ let table = `
       <th scope="col">KETERANGAN</th>
     </tr>
   </thead>
-  <tbody>
+  <tbody id="${itemTocreate[0].category}">
   </tbody>
 </table>
 `;
-// GET ELEMENT CONTAINER 
+// GET ELEMENT CONTAINER  && CREATE TABLE TEMPLATE HEADER
 document.getElementById("container").appendChild(document.createElement("div")).innerHTML= table;
 // GET ELEMENT TBODY
-let tbody = document.querySelector("tbody");
+let tbody = document.getElementById(`${itemTocreate[0].category}`);
 // FOR NUMBER IN TBODY
 let noColumn = 1;
-// LOOPING FOR LIST ITEM
-for(arrContent of listObat){
-  let trTableContent = `
-      <th scope="row">${noColumn++}</th>
-      <td>${arrContent.name}</td>
-      <td class="text-center">...</td>
-      <td>${arrContent.adverb()}</td>`;
-  if(arrContent.adverb() == "KURANG"){
-    let trTableDanger = tbody.appendChild(document.createElement("tr"));
-    trTableDanger.setAttribute("class","table-danger");
-    trTableDanger.innerHTML = trTableContent;
+    // LOOPING FOR LIST ITEM
+    for(arrContent of itemTocreate){
+      let trTableContent = `
+          <th scope="row">${noColumn++}</th>
+          <td>${arrContent.name}</td>
+          <td class="text-center">...</td>
+          <td>${arrContent.adverb()}</td>`;
+      if(arrContent.adverb() == "KURANG"){
+        let trTableDanger = tbody.appendChild(document.createElement("tr"));
+        trTableDanger.setAttribute("class","table-danger");
+        trTableDanger.innerHTML = trTableContent;
+        }
+      else{
+        tbody.appendChild(document.createElement("tr")).innerHTML=trTableContent;
+      }
+    if(noColumn > itemTocreate.length){
+      
     }
-  else{
-    tbody.appendChild(document.createElement("tr")).innerHTML=trTableContent;
-  }
+    }
 }
+
+//EXECUTE FUNCTION createTableContent
+createTableContent(listRokok);
+createTableContent(listObat);
