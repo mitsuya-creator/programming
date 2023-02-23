@@ -385,6 +385,22 @@ let listDapur = [
   minyakPer,telur,beras,kecapBango,abcExtra,roycoAy,terasiAbc,miki,minyak1L,gulaPthPer,mentegaSet,gulaPthSet,sasa500,korekKayu,roycoSapi,bonCabe,korekTokai
   ]
 
+// LIST OBJECT PERMEN
+let mint = new List_items("PERMEN","MINTZ",7);
+let bigBabol = new List_items("PERMEN","BIGBABOL",7);
+let golia = new List_items("PERMEN","GOLIA",7);
+let dinosX = new List_items("PERMEN","DINOS-X",7);
+let relax = new List_items("PERMEN","RELAXA",7);
+let lazery = new List_items("PERMEN","LAZERY",7);
+let piramid = new List_items("PERMEN","PIRAMID-CKT",7);
+let kopiko = new List_items("PERMEN","KOPIKO",7);
+let yupi = new List_items("PERMEN","YUPI-500",7);
+let hotPermen = new List_items("PERMEN","PERMEN-KAKI",7);
+
+//LIST ITEMS PERMEN
+let listPermen = [
+  mint,bigBabol,golia,dinosX,relax,lazery,piramid,kopiko,yupi,hotPermen
+  ];
 
 //FUNCTION FOR CREATE TABLE BODY AND CONTENT
 function createTableContent(itemTocreate){
@@ -444,3 +460,4 @@ createTableContent(listKamarMandi);
 createTableContent(listBeverage);
 createTableContent(listMie);
 createTableContent(listDapur);
+createTableContent(listPermen);
