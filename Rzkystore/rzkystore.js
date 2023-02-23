@@ -268,6 +268,65 @@ let listKamarMandi = [
   ciptPasta,peptPasta,shampoLF,shampoClrBiru,panteneCond,mamaLemon,shampoHS,moltoBiru,sabunGive,sabunLFbiru,dettolOrg,liquidPink,sunlight5000,panteneBiru,sunlight2000,rejoice,sabunColek2000,downyHitam,procline500
   ]
 
+// LIST OBEJECT BEVERAGE
+let kopkap2000 = new List_items("MINUMAN","KOPIKAP-2000",7);
+let amoCola = new List_items("MINUMAN","AMO-COLA",7);
+let amoStr = new List_items("MINUMAN","AMO-STR",7);
+let amoLemon = new List_items("MINUMAN","AMO-LEMON",7);
+let isoPlus = new List_items("MINUMAN","ISOPLUS",7);
+let bearBrand = new List_items("MINUMAN","BEAR-BRAND",7);
+let uCkt250 = new List_items("MINUMAN","ULTRA-CKT-250",7);
+let indoPth125 = new List_items("MINUMAN","INDOMILK-PTH-125",7);
+let hydCoco = new List_items("MINUMAN","HYDROCOCO",7);
+let zoda = new List_items("MINUMAN","ZODA",7);
+let milkuCkt = new List_items("MINUMAN","MILKU-CKT",7);
+let milkuStr = new List_items("MINUMAN","MILKU-STR",7);
+let bintangZero = new List_items("MINUMAN","BINTANG-ZERO",7);
+let krating = new List_items("MINUMAN","KRATINGDENG",7);
+let cingkuKal = new List_items("MINUMAN","CINGKU-KALENG",7);
+let tehRio = new List_items("MINUMAN","TEH-RIO",7);
+let coLa = new List_items("MINUMAN","COCA-COLA",7);
+let uStr250 = new List_items("MINUMAN","ULTRA-STR-250",7);
+let uPth250 = new List_items("MINUMAN","ULTRA-PTH-250",7);
+let panta = new List_items("MINUMAN","FANTA",7);
+let goldaCofe = new List_items("MINUMAN","GOLDA-COFFEE",7);
+let gCktBotol = new List_items("MINUMAN","GODDAY-CKT-BOTOL",7);
+let pocariS = new List_items("MINUMAN","POCARI-SWEET",7);
+let tebsKaleng = new List_items("MINUMAN","TEBS-KALENG",7);
+let minral_1L = new List_items("MINUMAN","MINRAL-1L",7);
+let kaki3Kaleng = new List_items("MINUMAN","KAKI-3-KALENG",7);
+let tehKotak = new List_items("MINUMAN","TEH-KOTAK",7);
+let isoCup = new List_items("MINUMAN","ISO-CUP",7);
+let ale = new List_items("MINUMAN","ALE-ALE",7);
+let uCkt200 = new List_items("MINUMAN","ULTRA-CKT-200",7);
+let nutriBost = new List_items("MINUMAN","NUTRIBOOST",7);
+let FloriJeruk = new List_items("MINUMAN","FLORIDINA-JERUK",7);
+let uStr125 = new List_items("MINUMAN","ULTRA-STR-125",7);
+let c1000_ORG = new List_items("MINUMAN","C1000-ORANGE",7);
+let tehPucuk = new List_items("MINUMAN","TEH-PUCUK",7);
+let buaVit = new List_items("MINUMAN","BUAVITA",7);
+let sariKcg = new List_items("MINUMAN","SARI-KACANG-IJO",7);
+let kaki3BtlBesar = new List_items("MINUMAN","KAKI-3-BTL-BSR",7);
+let sprit = new List_items("MINUMAN","SPRITE",7);
+let aqua_1L = new List_items("MINUMAN","AQUA-1L",7);
+let panther = new List_items("MINUMAN","PANTHER",7);
+let okBig = new List_items("MINUMAN","OKKY-BIG",7);
+let mizon = new List_items("MINUMAN","MIZONE",7);
+let aqua_Gelas = new List_items("MINUMAN","AQUA-GELAS",7);
+let yogurtDrink = new List_items("MINUMAN","YOUGURT-DRINK",7);
+let powerF = new List_items("MINUMAN","POWER-F",7);
+let aqua_600 = new List_items("MINUMAN","AQUA-600",7);
+let tehGelasBig = new List_items("MINUMAN","TEH-GELAS-BIG",7);
+let uCkt125 = new List_items("MINUMAN","ULTRA-CKT-125",7);
+let esTeler = new List_items("MINUMAN","ES-TELER",7);
+let cincauPand = new List_items("MINUMAN","CINCAU-PANDA",7);
+let monti1000 = new List_items("MINUMAN","MOUNTEA-1000",7);
+let kaki3BtlKcl = new List_items("MINUMAN","KAKI-3-BTL-KCL",7);
+
+// LIST ITEMS BEVERAGE
+let listBeverage = [
+  kopkap2000,amoCola,amoStr,amoLemon,isoPlus,bearBrand,uCkt250,indoPth125,hydCoco,zoda,milkuCkt,milkuStr,bintangZero,cingkuKal,krating,tehRio,coLa,uStr250,uPth250,panta,goldaCofe,gCktBotol,pocariS,tebsKaleng,minral_1L,kaki3Kaleng,tehKotak,isoCup,ale,uCkt200,nutriBost,FloriJeruk,uStr125,c1000_ORG,tehPucuk,buaVit,sariKcg,kaki3BtlBesar,sprit,aqua_1L,panther,okBig,mizon,aqua_Gelas,yogurtDrink,powerF,aqua_600,tehGelasBig,uCkt125,esTeler,cincauPand,monti1000,kaki3BtlKcl
+  ]
 
 
 
@@ -326,3 +385,4 @@ createTableContent(listSnack);
 createTableContent(listKueRoti);
 createTableContent(listKopi);
 createTableContent(listKamarMandi);
+createTableContent(listBeverage);
