@@ -242,7 +242,32 @@ let listKopi = [
   marimasSet,energenIjo,energenVanila,maxteaSet,gCappucino,nutrisariJP,sariwangiSet,dancowPutih,creamyLate,kapalMix,topAren,dancowCkt,berasMerah,esteEmje,gCoolin,gVanilla,abcSusu,toraDuo,abcPlus,luwakWhite,gilusMix,susuPutih,gCarabian,angetSuje,susuCkt,gMerah,energenCkt,gCkt,indoCafe,extraJoss
   ]
 
-// 
+// LIST OBJECT KAMAR MANDI
+let ciptPasta = new List_items("KAMAR-MANDI","CIPTADENT-PASTA",7);
+let peptPasta = new List_items("KAMAR-MANDI","PEPSODENT-PASTA",7);
+let shampoLF = new List_items("KAMAR-MANDI","SHAMPO-LF",7);
+let shampoClrBiru = new List_items("KAMAR-MANDI","SHAMPO-CLEAR-BIRU",7);
+let panteneCond = new List_items("KAMAR-MANDI","PANTENE-CONDITIONER",7);
+let mamaLemon = new List_items("KAMAR-MANDI","MAMA-LEMON-1000",7);
+let shampoHS = new List_items("KAMAR-MANDI","SHAMPO-HS",7);
+let moltoBiru = new List_items("KAMAR-MANDI","MOLTO-BIRU",7);
+let sabunGive = new List_items("KAMAR-MANDI","SABUN-GIVE",7);
+let sabunLFbiru = new List_items("KAMAR-MANDI","SABUN-LF-BIRU",7);
+let dettolOrg = new List_items("KAMAR-MANDI","DETTOL-ORANGE",7);
+let liquidPink = new List_items("KAMAR-MANDI","SOKLIN-LIQUID-PINK",7);
+let sunlight5000 = new List_items("KAMAR-MANDI","SUNLIGHT-5000",7);
+let panteneBiru = new List_items("KAMAR-MANDI","SHAMPO-PANTENE-BIRU",7);
+let sunlight2000 = new List_items("KAMAR-MANDI","SUNLIGHT-2000",7);
+let rejoice = new List_items("KAMAR-MANDI","SHAMPO-REJOICE",7);
+let sabunColek2000 = new List_items("KAMAR-MANDI","SABUN-COLEK-2000",7);
+let downyHitam = new List_items("KAMAR-MANDI","DOWNY-HITAM-1000",7);
+let procline500 = new List_items("KAMAR-MANDI","PROCLINE-500",7);
+
+// LIST ITEMS KAMAR-MANDI
+let listKamarMandi = [
+  ciptPasta,peptPasta,shampoLF,shampoClrBiru,panteneCond,mamaLemon,shampoHS,moltoBiru,sabunGive,sabunLFbiru,dettolOrg,liquidPink,sunlight5000,panteneBiru,sunlight2000,rejoice,sabunColek2000,downyHitam,procline500
+  ]
+
 
 
 
@@ -300,3 +325,4 @@ createTableContent(listATK);
 createTableContent(listSnack);
 createTableContent(listKueRoti);
 createTableContent(listKopi);
+createTableContent(listKamarMandi);
