@@ -205,7 +205,46 @@ let listKueRoti = [
   sariGandumSandwice,roti2000,rotiAoka,marieTunggal,pastaKeju500,pastaCkt500,ardenKue,malkistCrackers7k,chocoKeju1000,time2000,slaiOlai2000,vegeChs,regalDuoCkt,regalDuoKcg,gery2000,malkistCkt7k,betterKue,wafelloCkt,wafelloCaramel,chocoCkt1000,nextar2000,superstar1000,malkistAbon1000,cokiCoki,kalpa2000,gorio500,nabati2000,malkistCkt1000,chocopie,bengWfer,gerycrackerKeju,oreoBolu,chocolatos500,nabatiRolls,oreoSandwice,bigrolKeju,malkistCrk1000,bigrolCkt,ahh1000,time1000,regal1000,romaKelapa
   ];
 
-// LIST OBJECT ❌❌❌❌
+// LIST OBJECT KOPI
+let marimasSet = new List_items("PERKOPIAN","MARIMAS",7);
+let energenIjo = new List_items("PERKOPIAN","ENERGEN-KACANG-IJO",7);
+let energenVanila = new List_items("PERKOPIAN","ENERGEN-VANILLA",7);
+let maxteaSet = new List_items("PERKOPIAN","MAXTEA",7);
+let gCappucino = new List_items("PERKOPIAN","GOODDAY-CAPPUCINO",7);
+let nutrisariJP = new List_items("PERKOPIAN","NUTRISARI-JP",7);
+let sariwangiSet = new List_items("PERKOPIAN","SARIWANGI-SACHET",7);
+let dancowPutih = new List_items("PERKOPIAN","DANCOW-PUTIH",7);
+let creamyLate = new List_items("PERKOPIAN","CREAMY-LATE",7);
+let kapalMix = new List_items("PERKOPIAN","KAPAL-API-MIX",7);
+let topAren = new List_items("PERKOPIAN","TOP-KOPI-GULA-AREN",7);
+let dancowCkt = new List_items("PERKOPIAN","DANCOW-COKLAT",7);
+let berasMerah = new List_items("PERKOPIAN","NESTLE-BERAS-MERAH",7);
+let esteEmje = new List_items("PERKOPIAN","ESTE-EMJE",7);
+let gCoolin = new List_items("PERKOPIAN","GOODDAY-COOLIN",7);
+let gVanilla = new List_items("PERKOPIAN","GOODDAY-VANILLA",7);
+let abcSusu = new List_items("PERKOPIAN","ABC-SUSU",7);
+let toraDuo = new List_items("PERKOPIAN","TORABIKA-DUO",7);
+let abcPlus = new List_items("PERKOPIAN","ABC-PLUS",7);
+let luwakWhite = new List_items("PERKOPIAN","LUWAK-WHITE-COFFEE",7);
+let gilusMix = new List_items("PERKOPIAN","GILUS-MIX",7);
+let susuPutih = new List_items("PERKOPIAN","SUSU-PUTIH-SACHET",7);
+let gCarabian = new List_items("PERKOPIAN","GOODDAY-CARABIAN",7);
+let angetSuje = new List_items("PERKOPIAN","ANGETSARI-SUSU-JAHE",7);
+let susuCkt = new List_items("PERKOPIAN","SUSU-COKLAT-SACHET",7);
+let gMerah = new List_items("PERKOPIAN","GOODDAY-MERAH",7);
+let energenCkt = new List_items("PERKOPIAN","ENERGEN-COKLAT",7);
+let gCkt = new List_items("PERKOPIAN","GOODDAY-COKLAT",7);
+let indoCafe = new List_items("PERKOPIAN","INDOCAFE",7);
+let extraJoss = new List_items("PERKOPIAN","EXTRAJOSS",7);
+
+// LIST ITEMS KOPI
+let listKopi = [
+  marimasSet,energenIjo,energenVanila,maxteaSet,gCappucino,nutrisariJP,sariwangiSet,dancowPutih,creamyLate,kapalMix,topAren,dancowCkt,berasMerah,esteEmje,gCoolin,gVanilla,abcSusu,toraDuo,abcPlus,luwakWhite,gilusMix,susuPutih,gCarabian,angetSuje,susuCkt,gMerah,energenCkt,gCkt,indoCafe,extraJoss
+  ]
+
+// 
+
+
 
 //FUNCTION FOR CREATE TABLE BODY AND CONTENT
 function createTableContent(itemTocreate){
@@ -260,3 +299,4 @@ createTableContent(listStylist);
 createTableContent(listATK);
 createTableContent(listSnack);
 createTableContent(listKueRoti);
+createTableContent(listKopi);
