@@ -417,6 +417,21 @@ let abon = new List_items("TAMBAHAN","AABON",7);
 let lamp20 = new List_items("TAMBAHAN","LAMPU-20WATT",7);
 let korekKuping = new List_items("TAMBAHAN","KOREK-KUPING",7);
 
+// LIST OBJECT BABY
+let mamyXl = new List_items("BABY","MAMY-XL",7);
+let mamyL = new List_items("BABY","MAMY-L",7);
+let mamyS = new List_items("BABY","MAMY-S",7);
+let mamyM = new List_items("BABY","MAMY-M",7);
+let charm2 = new List_items("BABY","CHARM-NIGHT-2",7);
+let charmOrg = new List_items("BABY","CHARM-ORANGE",7);
+
+//LIST ITEMS BABY
+let listBaby = [
+  mamyXl,mamyL,mamyS,mamyM,charm2,charmOrg
+  ];
+
+
+
 // LIST ITEMS TAMBAHAN
 let listTambahan = [
   kiwi,swallow15K,lamp15,lamp10,remi,kresekBolaKcl,plastikRokok,gapleh,powerGlue,plastikEs2000,abon,lamp20,korekKuping
@@ -481,4 +496,5 @@ createTableContent(listBeverage);
 createTableContent(listMie);
 createTableContent(listDapur);
 createTableContent(listPermen);
+createTableContent(listBaby);
 createTableContent(listTambahan);
