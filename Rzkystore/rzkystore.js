@@ -361,6 +361,29 @@ let listMie = [
   popmiGor,koreaGor,koreaKuah,indoRend,indoRica,indoGentong,bihunSoto,kariSpes,popmiAb,suksesKuah,suksesGor,popmiBaso,indoGor,indoAb,indoGeprek,indoIjo,bihunAb,indoKocok,indoSoto,sedapSoto,indoAceh,indoSeblak,sedaapGor,mieGelas,sedaapAb,indoGeti
 ];
 
+// LIST OBJECT DAPUR
+let minyakPer = new List_items("DAPUR","MINYAK-PERAPAT",7);
+let telur = new List_items("DAPUR","TELUR",7);
+let beras = new List_items("DAPUR","BERAS",7);
+let kecapBango = new List_items("DAPUR","KECAP-BANGO-1000",7);
+let abcExtra = new List_items("DAPUR","ABC-EXTRA-PEDAS",7);
+let roycoAy = new List_items("DAPUR","ROYCO-AYAM-SACHET",7);
+let terasiAbc = new List_items("DAPUR","TERASI-ABC-SACHET",7);
+let miki = new List_items("DAPUR","MIKI-SODIUM",7);
+let minyak1L = new List_items("DAPUR","MINYAK-1L",7);
+let gulaPthPer = new List_items("DAPUR","GULA-PTH-PERAPAT",7);
+let mentegaSet = new List_items("DAPUR","MENTEGA-SACHET",7);
+let gulaPthSet = new List_items("DAPUR","GULA-PTH-SACHET",7);
+let sasa500 = new List_items("DAPUR","SASA-500",7);
+let korekKayu = new List_items("DAPUR","KOREK-KAYU",7);
+let roycoSapi = new List_items("DAPUR","ROYCO-SAPI-SACHET",7);
+let bonCabe = new List_items("DAPUR","BONCABE",7);
+let korekTokai = new List_items("DAPUR","TOKAI",7);
+
+// LIST ITEMS DAPUR
+let listDapur = [
+  minyakPer,telur,beras,kecapBango,abcExtra,roycoAy,terasiAbc,miki,minyak1L,gulaPthPer,mentegaSet,gulaPthSet,sasa500,korekKayu,roycoSapi,bonCabe,korekTokai
+  ]
 
 
 //FUNCTION FOR CREATE TABLE BODY AND CONTENT
@@ -420,3 +443,4 @@ createTableContent(listKopi);
 createTableContent(listKamarMandi);
 createTableContent(listBeverage);
 createTableContent(listMie);
+createTableContent(listDapur);
