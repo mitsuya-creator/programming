@@ -402,6 +402,26 @@ let listPermen = [
   mint,bigBabol,golia,dinosX,relax,lazery,piramid,kopiko,yupi,hotPermen
   ];
 
+// LIST OBJECT TAMBAHAN
+let kiwi = new List_items("TAMBAHAN","KIWI-HITAM",7);
+let swallow15K = new List_items("TAMBAHAN","SWALLOW-15K",7);
+let lamp15 = new List_items("TAMBAHAN","LAMPU-15WATT",7);
+let lamp10 = new List_items("TAMBAHAN","LAMPU-10WATT",7);
+let remi = new List_items("TAMBAHAN","KARTU-REMI",7);
+let kresekBolaKcl = new List_items("TAMBAHAN","KRESEK-BOLA-KCL",7);
+let plastikRokok = new List_items("TAMBAHAN","PLASTIK-ROKOK",7);
+let gapleh = new List_items("TAMBAHAN","KARTU-GAPLEH",7);
+let powerGlue = new List_items("TAMBAHAN","POWER-GLUE",7);
+let plastikEs2000 = new List_items("TAMBAHAN","PLASTIK-ES-2000",7);
+let abon = new List_items("TAMBAHAN","AABON",7);
+let lamp20 = new List_items("TAMBAHAN","LAMPU-20WATT",7);
+let korekKuping = new List_items("TAMBAHAN","KOREK-KUPING",7);
+
+// LIST ITEMS TAMBAHAN
+let listTambahan = [
+  kiwi,swallow15K,lamp15,lamp10,remi,kresekBolaKcl,plastikRokok,gapleh,powerGlue,plastikEs2000,abon,lamp20,korekKuping
+ ]
+
 //FUNCTION FOR CREATE TABLE BODY AND CONTENT
 function createTableContent(itemTocreate){
   // CREATE TABEL TEMPLATE AND HEADER
@@ -461,3 +481,4 @@ createTableContent(listBeverage);
 createTableContent(listMie);
 createTableContent(listDapur);
 createTableContent(listPermen);
+createTableContent(listTambahan);
