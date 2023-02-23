@@ -328,6 +328,39 @@ let listBeverage = [
   kopkap2000,amoCola,amoStr,amoLemon,isoPlus,bearBrand,uCkt250,indoPth125,hydCoco,zoda,milkuCkt,milkuStr,bintangZero,cingkuKal,krating,tehRio,coLa,uStr250,uPth250,panta,goldaCofe,gCktBotol,pocariS,tebsKaleng,minral_1L,kaki3Kaleng,tehKotak,isoCup,ale,uCkt200,nutriBost,FloriJeruk,uStr125,c1000_ORG,tehPucuk,buaVit,sariKcg,kaki3BtlBesar,sprit,aqua_1L,panther,okBig,mizon,aqua_Gelas,yogurtDrink,powerF,aqua_600,tehGelasBig,uCkt125,esTeler,cincauPand,monti1000,kaki3BtlKcl
   ]
 
+// LIST OBJECT MIE
+let popmiGor = new List_items("MIE","POPMIE-GORENG",7);
+let koreaGor = new List_items("MIE","SEDAAP-KOREA-GORENG",7);
+let koreaKuah = new List_items("MIE","SEDAAP-KOREA-KUAH",7);
+let indoRend = new List_items("MIE","INDO-RENDANG",7);
+let indoRica = new List_items("MIE","INDO-RICA",7);
+let indoGentong = new List_items("MIE","INDO-EMPAL-GENTONG",7);
+let bihunSoto = new List_items("MIE","BIHUNKU-SOTO",7);
+let kariSpes = new List_items("MIE","SEDAAP-KARI-SPECIAL",7);
+let popmiAb = new List_items("MIE","POPMIE-AB",7);
+let suksesKuah = new List_items("MIE","SUKSES-KUAH",7);
+let suksesGor = new List_items("MIE","SUKSES-GORENG",7);
+let popmiBaso = new List_items("MIE","POPMIE-BASO",7);
+let indoGor = new List_items("MIE","INDO-GORENG",7);
+let indoAb = new List_items("MIE","INDO-AB",7);
+let indoGeprek = new List_items("MIE","INDO-GEPREK",7);
+let indoIjo = new List_items("MIE","INDO-CABE-IJO",7);
+let bihunAb = new List_items("MIE","BIHUNKU-AB",7);
+let indoKocok = new List_items("MIE","INDO-KOCOK-BDG",7);
+let indoSoto = new List_items("MIE","INDO-SOTO",7);
+let sedapSoto = new List_items("MIE","SEDAAP-SOTO",7);
+let indoAceh = new List_items("MIE","INDO-ACEH",7);
+let indoSeblak = new List_items("MIE","INDO-SEBLAK",7);
+let sedaapGor = new List_items("MIE","SEDAAP-GORENG",7);
+let mieGelas = new List_items("MIE","MIE-GELAS",7);
+let sedaapAb = new List_items("MIE","SEDAAP-AB",7);
+let indoGeti = new List_items("MIE","INDO-GETI",7);
+
+// LIST ITEMS MIE
+let listMie = [
+  popmiGor,koreaGor,koreaKuah,indoRend,indoRica,indoGentong,bihunSoto,kariSpes,popmiAb,suksesKuah,suksesGor,popmiBaso,indoGor,indoAb,indoGeprek,indoIjo,bihunAb,indoKocok,indoSoto,sedapSoto,indoAceh,indoSeblak,sedaapGor,mieGelas,sedaapAb,indoGeti
+];
+
 
 
 //FUNCTION FOR CREATE TABLE BODY AND CONTENT
@@ -386,3 +419,4 @@ createTableContent(listKueRoti);
 createTableContent(listKopi);
 createTableContent(listKamarMandi);
 createTableContent(listBeverage);
+createTableContent(listMie);
