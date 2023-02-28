@@ -105,7 +105,7 @@ let listObat = [vegeta,konidin,neozep,panadoL_ijo,viks_inhelar,bejo_jahe,antangi
 
 // LIST OBJECT STYLELIST
 let mirandBlack = new List_items("STYLELIST","MIRANDA-BLACK",1);
-let tisu2500 = new List_items("STYLELIST","TISU-2500",1);
+let tisu2500 = new List_items("STYLELIST","TISU-2500",7);
 let mirandBlech = new List_items("STYLELIST","MIRANDA-BLEACHING",1);
 let mirandColor = new List_items("STYLELIST","MIRANDA-WARNA",1);
 
@@ -128,7 +128,7 @@ let listATK = [lakbanPthkcl,lakbanPthbsr,etona,bonRangkap,spidolPermanent,pulpen
 // LIST OBJECK SNACK 
 let twist2000 = new List_items("SNACK","TWIST-2000",7);
 let chitatoLite = new List_items("SNACK","CHITATO-LITE",1);
-let chitatoBbq = new List_items("SNACK","CHITATO-BBQ",7);
+let chitatoBbq = new List_items("SNACK","CHITATO-BBQ",1);
 let kuaciRebo = new List_items("SNACK","KUACI-REBO",7);
 let ajisuka = new List_items("SNACK","AJISUKA",1);
 let pangpang = new List_items("SNACK","PANG-PANG",1);
@@ -138,7 +138,7 @@ let kcgKulit = new List_items("SNACK","KACANG-KULIT",7);
 let rostaIjo = new List_items("SNACK","ROSTA-IJO",7);
 let moringPds = new List_items("SNACK","MORING-PEDAS",7);
 let kerupuk2000 = new List_items("SNACK","KERUPUK-2000",7);
-let kerupukBantet = new List_items("SNACK","KERUPUK-BANTET",7);
+let kerupukBantet = new List_items("SNACK","KERUPUK-BANTET",1);
 let dadaliCkr = new List_items("SANCK","DADALI-CIKUR",7);
 let basreng1000 = new List_items("SNACK","BASRENG-1000",1);
 let rostaMerah = new List_items("SNACK","ROSTA-MERAH",1);
@@ -150,7 +150,7 @@ let kcgPolong = new List_items("SNACK","KACANG-POLONG",7);
 let dadaliCjr = new List_items("SNACK","DADALI-CIANJUR",7);
 let koroMerah = new List_items("SNACK","KORO-MERAH",7);
 let moringAsin = new List_items("SNACK","MORING-ASIN",7);
-let koroIjo = new List_items("SNACK","KORO-IJO",1);
+let koroIjo = new List_items("SNACK","KORO-IJO",7);
 let taroBbq = new List_items("SNACK","TARO-BBQ",1);
 let sosisSapi = new List_items("SNACK","SOSIS-SAPI",7);
 let qtelaBbq = new List_items("SNACK","QTELA-BBQ",1);
@@ -265,10 +265,11 @@ let sabunColek2000 = new List_items("KAMAR-MANDI","SABUN-COLEK-2000",1);
 let downyHitam = new List_items("KAMAR-MANDI","DOWNY-HITAM-1000",7);
 let procline500 = new List_items("KAMAR-MANDI","PROCLINE-500",7);
 let fnl_wash = new List_items("KAMAR-MANDI","FAIR&LOVELY-WASH",7);
+let rinso1000 = new List_items("KAMAR-MANDI","RINSO1000",1);
 
 // LIST ITEMS KAMAR-MANDI
 let listKamarMandi = [
-  ciptPasta,peptPasta,shampoLF,shampoClrBiru,panteneCond,mamaLemon,shampoHS,moltoBiru,sabunGive,sabunLFbiru,dettolOrg,liquidPink,sunlight5000,panteneBiru,sunlight2000,rejoice,sabunColek2000,downyHitam,procline500,fnl_wash
+  ciptPasta,peptPasta,shampoLF,shampoClrBiru,panteneCond,mamaLemon,shampoHS,moltoBiru,sabunGive,sabunLFbiru,dettolOrg,liquidPink,sunlight5000,panteneBiru,sunlight2000,rejoice,sabunColek2000,downyHitam,procline500,fnl_wash,rinso1000
   ]
 
 // LIST OBEJECT BEVERAGE
@@ -300,7 +301,7 @@ let minral_1L = new List_items("MINUMAN","MINRAL-1L",7);
 let kaki3Kaleng = new List_items("MINUMAN","KAKI-3-KALENG",7);
 let tehKotak = new List_items("MINUMAN","TEH-KOTAK",7);
 let isoCup = new List_items("MINUMAN","ISO-CUP",7);
-let ale = new List_items("MINUMAN","ALE-ALE",7);
+let ale = new List_items("MINUMAN","ALE-ALE",1);
 let uCkt200 = new List_items("MINUMAN","ULTRA-CKT-200",7);
 let nutriBost = new List_items("MINUMAN","NUTRIBOOST",7);
 let FloriJeruk = new List_items("MINUMAN","FLORIDINA-JERUK",7);
@@ -373,6 +374,7 @@ let kecapBango = new List_items("DAPUR","KECAP-BANGO-1000",7);
 let abcExtra = new List_items("DAPUR","ABC-EXTRA-PEDAS",7);
 let roycoAy = new List_items("DAPUR","ROYCO-AYAM-SACHET",7);
 let terasiAbc = new List_items("DAPUR","TERASI-ABC-SACHET",7);
+let terasiUleg = new List_items("DAPUR","SAMBAL-ULEG",1);
 let miki = new List_items("DAPUR","MIKI-SODIUM",1);
 let minyak1L = new List_items("DAPUR","MINYAK-1L",7);
 let gulaPthPer = new List_items("DAPUR","GULA-PTH-PERAPAT",1);
@@ -386,7 +388,7 @@ let korekTokai = new List_items("DAPUR","TOKAI",7);
 
 // LIST ITEMS DAPUR
 let listDapur = [
-  minyakPer,telur,beras,kecapBango,abcExtra,roycoAy,terasiAbc,miki,minyak1L,gulaPthPer,mentegaSet,gulaPthSet,sasa500,korekKayu,roycoSapi,bonCabe,korekTokai
+  minyakPer,telur,beras,kecapBango,abcExtra,roycoAy,terasiAbc,terasiUleg,miki,minyak1L,gulaPthPer,mentegaSet,gulaPthSet,sasa500,korekKayu,roycoSapi,bonCabe,korekTokai
   ]
 
 // LIST OBJECT PERMEN
