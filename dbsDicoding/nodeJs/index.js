@@ -8,6 +8,22 @@
 // }
 
 import {mhs as mitsuya} from "./mhs.js"; // import one variable of module
-let loop = (m) => console.log(m)
+// let loop = (m) => console.log(m)
 
-loop(mitsuya)
+// loop(mitsuya)
+
+
+// TRY catch
+try{
+  console.log("object mitsuya")
+  //errorcode;
+  console.log(mitsuya)
+}catch(error){
+  for(contentError in error){
+    console.log(contentError)
+   }
+  //console.log(error)
+  //console.log(error.message)
+  //console.log(error.stack)
+}
+  
