@@ -1,25 +1,93 @@
-// > LAKUKAN PENGECEKAN KETERSEDIAN MESIN
-// > PERIKSA STOCK DIDALAM MESIN
-// > BUAT KOPI
+// ALGORITHM MAKE A CUP OF COFFE 
+// > CHECK STOCK
+// > BOILING WATER
+// > GRINDING COFFE
+// > BREW COFFE
+// > CHECK COFFE MACHINE
+// > COFFE READY TO DRINK
 
-const state = {
-  stock: {
-    coffee : 500,
-    water : 1000
-  },
-  isCoffeeMachineBusy: false
+// OBJECT STOCK
+let stock = {
+  coffee: 100,
+  water: 100,
+  coffeMachine: 0
 }
-console.log('console-1')
-const checkAvaibility = () => {
-  return new Promise((resolve,reject) =>{
+// CHECK STOCK
+let checkAvaibility = () => {
+  console.log('checking...')
+  return new Promise((ready,notReady) => {
     setTimeout(() => {
-    if(state.stock.coffee < 100 && state.stock.water > 50){
-      resolve('Material ready to used')
+    if(stock.coffee > 50 && stock.water > 50){
+      ready(`STOCK Enough! coffee and water ready to used`)
+    }else{
+      notReady('material not ready to used')
     }
-    else{
-      reject('bahan kurang')
-    }
-  }, 5000)})
+    },2000)
+  })
 }
-checkAvaibility().then((value) => console.log(value)).catch((value) => console.log(value))
-console.log('console-2')
+
+let checkCoffeMachine = () => {
+  return new Promise((ready,notReady) => {
+    setTimeout(() =>{
+    if(!stock.coffeMachine){
+      ready('coffeMachine ready to used')
+    }else{
+      notReady('coffe Machine broken')
+    }
+   },1000);
+  })
+}
+
+let boilingWater = () => {
+  return new Promise((ready,notReady) => {
+    console.log('water is boiling');
+    setTimeout(() => {
+      ready('hot water is ready')
+    }, 3000);
+  })
+}
+
+let grindingCoffe = () => {
+  return new Promise((ready,notReady) => {
+    console.log('coffee is grinding');
+    setTimeout(() => {
+      ready('grinding coffee done')
+    },1000);
+  })
+}
+
+let brewCoffe = () => {
+  return new Promise((ready,notReady) => {
+    console.log('coffe is brewing');
+    setTimeout(() => {
+      ready('brewing coffee done, coffe Ready to drink!')
+    },3000)
+  })
+}
+
+
+function makingCoffee(){
+  checkAvaibility()
+  .then(success => {
+    console.log(success);
+    return checkCoffeMachine();
+  })
+  .then(success => {
+    console.log(success);
+    const promises = [boilingWater(),grindingCoffe()];
+    return Promise.all(promises);
+  })
+  .then(success => {
+    console.log(success);
+    return brewCoffe();
+  })
+  .then(success => {
+    console.log(success)
+    })
+  .catch(notReady => {
+    console.log(notReady);
+    stock.coffeMachine = false;
+  })
+}
+
+makingCoffee();
