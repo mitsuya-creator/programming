@@ -29,4 +29,4 @@ function isStudentPassExam(scores,name){
   }
 }
 
-export { averageExams,isStudentPassExam };
+module.exports =  { averageExams,isStudentPassExam };
