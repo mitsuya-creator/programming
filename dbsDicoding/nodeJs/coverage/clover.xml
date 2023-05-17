@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1678323731918" clover="3.2.0">
+  <project timestamp="1678323731919" name="All files">
+    <metrics statements="16" coveredstatements="14" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="4" elements="25" coveredelements="21" complexity="0" loc="16" ncloc="16" packages="1" files="1" classes="1"/>
+    <file name="gradeCalculation.js" path="/root/mygithub/mitsuya_creator/programming/dbsDicoding/nodeJs/Testing/gradeCalculation.js">
+      <metrics statements="16" coveredstatements="14" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="4"/>
+      <line num="4" count="0" type="stmt"/>
+      <line num="9" count="12" type="stmt"/>
+      <line num="10" count="3" type="cond" truecount="1" falsecount="1"/>
+      <line num="11" count="9" type="stmt"/>
+      <line num="12" count="3" type="stmt"/>
+      <line num="13" count="3" type="stmt"/>
+      <line num="17" count="2" type="stmt"/>
+      <line num="18" count="2" type="stmt"/>
+      <line num="19" count="2" type="stmt"/>
+      <line num="20" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="21" count="1" type="stmt"/>
+      <line num="22" count="1" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="28" count="0" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
