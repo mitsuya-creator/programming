@@ -1,0 +1,21 @@
+{
+  "name": "0xwildcard",
+  "version": "1.0.0",
+  "description": "learNodeJS",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitsuya-creator/programming.git"
+  },
+  "author": "0xwildcard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mitsuya-creator/programming/issues"
+  },
+  "homepage": "https://github.com/mitsuya-creator/programming#readme"
+}
